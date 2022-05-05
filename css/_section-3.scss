@@ -1,0 +1,121 @@
+.sec-3 {
+    background-image: url(../img/bg_wine-bottle-section.jpg);
+    @include bg();
+
+    .mn-wine_sec {
+        padding: 120px 0;
+
+        .content {
+            .heading {
+                font-size: 50px;
+                color: $primary_color;
+            }
+
+            .sub_heading {
+                font-size: 90px;
+                line-height: 109px;
+                padding: 30px 0;
+                color: $secondary_color;
+            }
+
+            .read_more {
+                font-size: 40px;
+                color: $primary_color;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                gap: 10px;
+                padding: 2px solid ;
+                span{
+                    font-size: 20px;
+                    padding: 12px 34px;
+                    border: 3px solid $primary_color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .sec-3 {
+        background-image: url(../img/bg_wine-bottle-section.jpg);
+        @include bg();
+
+        .mn-wine_sec {
+            padding: 110px 0;
+
+            .content {
+                .heading {
+                    font-size: 30px;
+                }
+
+                .sub_heading {
+                    font-size: 60px;
+                    line-height: 69px;
+                    padding: 30px 0;
+                }
+
+                .read_more {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sec-3 {
+
+        .mn-wine_sec {
+            padding: 110px 0 70px;
+
+            .content {
+                .heading {
+                    font-size: 20px;
+                }
+
+                .sub_heading {
+                    font-size: 50px;
+                    line-height: 50px;
+                    padding: 15px 0;
+                }
+
+                .read_more {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .sec-3 {
+
+        .mn-wine_sec {
+            padding: 90px 0 50px;
+
+            .wine_bottle {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                .heading {
+                    font-size: 15px;
+                }
+
+                .sub_heading {
+                    font-size: 35px;
+                    line-height: 35px;
+                    padding: 10px 0;
+                }
+
+                .read_more {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

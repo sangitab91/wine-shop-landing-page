@@ -1,0 +1,119 @@
+// Variable Declaration
+$white:#fff;
+$primary_color:#88171D;
+$secondary_color:#304150;
+$gray:#5C5C5C;
+$light-red: #E5A6AF;
+$border:2px solid #A43E4C80;
+$sec-padding: 120px 0;
+$w-75: 70%;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'cambria';
+    src: url(../fonts/cambria.ttc);
+
+    font-family: 'cabinsketch';
+    src: url(../fonts/cabinsketch.ttf);
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@mixin bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin square_border {
+    content: '';
+    position: absolute;
+    z-index: 20;
+}
+
+@mixin title {
+    color: $primary_color;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.sec-title {
+    font-size: 50px;
+    padding-bottom: 70px;
+    position: relative;
+    text-align: center;
+    color: $primary_color;
+
+    &::before {
+        content: url(../img/header-Design.png);
+        position: absolute;
+        padding-top: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media screen and(max-width:1200px) {
+    .sec-title {
+        font-size: 45px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and(max-width:320px) {
+    .sec-title {
+        font-size: 30px;
+        padding-bottom: 60px;
+        position: relative;
+        text-align: center;
+        color: $primary_color;
+
+        &::before {
+            content: url(../img/header-Design.png);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+
+.mn-landing_page {
+    position: relative;
+
+    .sec-2 {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        width: 70%;
+        transform: translateX(-50%) translateY(-110%);
+    }
+
+}
