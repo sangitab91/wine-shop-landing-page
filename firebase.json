@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "wine-shop-sangitab91",
+    "site": "wine-shop-landing-page-sangitab91",
     "public": "public",
     "ignore": [
       "firebase.json",
