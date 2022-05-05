@@ -1,0 +1,159 @@
+.sec-7 {
+    background-image: url(../img/bg_why-us.jpg);
+    background-position: bottom;
+    @include bg();
+
+    .mn-sec {
+        padding: $sec-padding;
+
+        .content {
+            padding-bottom: 100px;
+        }
+
+        .mn-icon {
+            .icon {
+                padding: 28px 20px;
+                background-color: $light-red;
+                border-radius: 20px;
+                transition: .2s;
+
+                &:hover {
+                    background-color: $secondary_color;
+                    opacity: .5;
+                }
+
+                .img {
+                    .ic_img {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .sec-7 {
+
+        .mn-sec {
+            padding: 110px 0;
+
+            .content {
+                font-size: 18px;
+                padding-bottom: 70px;
+            }
+
+            .mn-icon {
+                .icon {
+                    padding: 28px 20px;
+                    background-color: $light-red;
+                    border-radius: 18px;
+                    transition: .2s;
+
+                    .img {
+                        .ic_img {
+                            padding-bottom: 15px;
+                        }
+
+                        .icon-in {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1024px) {
+    .sec-7 {
+
+        .mn-sec {
+            padding: 90px 0;
+
+            .content {
+                font-size: 16px;
+                padding-bottom: 50px;
+            }
+
+            .mn-icon {
+                .icon {
+                    padding: 18px 10px;
+
+                    .img {
+                        .ic_img {
+                            padding-bottom: 10px;
+                        }
+
+                        .icon-in {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width:375px) {
+    .sec-7 {
+
+        .mn-sec {
+            padding: 50px 0;
+
+            .content {
+                font-size: 14px;
+                padding-bottom: 40px;
+            }
+
+            .mn-icon {
+                .icon {
+                    padding: 8px 5px;
+                    border-radius: 10px;
+
+                    .img {
+                        .ic_img {
+                            padding-bottom: 10px;
+                        }
+
+                        .icon-in {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:320px) {
+    .sec-7 {
+
+        .mn-sec {
+            padding: 7 0px 0;
+
+            .content {
+                font-size: 14px;
+                padding-bottom: 40px;
+            }
+
+            .mn-icon {
+                .icon {
+                    padding: 8px 5px;
+                    border-radius: 10px;
+
+                    .img {
+                        .ic_img {
+                            padding-bottom: 10px;
+                        }
+
+                        .icon-in {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

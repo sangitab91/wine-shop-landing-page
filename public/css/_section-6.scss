@@ -1,0 +1,141 @@
+.sec-6 {
+    background-image: url(../img/bg_offer.jpg);
+    background-attachment: fixed;
+    @include bg();
+
+    .mn-sec {
+        padding: $sec-padding;
+
+        .heading {
+            font-size: 38px;
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+
+        .sub_heading {
+            padding: 20px 0;
+            font-size: 26px;
+            letter-spacing: 15px;
+        }
+
+        .offer {
+            font-size: 40px;
+            letter-spacing: 20px;
+        }
+
+        .btn_buy-now {
+            margin-top: 30px;
+            padding: 12px 58px;
+            font-size: 20px;
+            border-radius: 50px;
+            color: $white;
+            background-color: $primary_color;
+            transition: .2s;
+
+            &:hover {
+                color: $white;
+                background-color: $secondary_color;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .sec-6 {
+        .mn-sec {
+            padding: 110px 0;
+
+            .heading {
+                font-size: 30px;
+                letter-spacing: 3px;
+            }
+
+            .sub_heading {
+                padding: 15px 0;
+                letter-spacing: 8px;
+            }
+
+            .offer {
+                font-size: 30px;
+                letter-spacing: 10px;
+            }
+
+            .btn_buy-now {
+                margin-top: 25px;
+                padding: 10px 55px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1024px) {
+    .sec-6 {
+        .mn-sec {
+            padding: 90px 0;
+
+            .heading {
+                font-size: 25px;
+                letter-spacing: 3px;
+            }
+
+            .sub_heading {
+                padding: 10px 0;
+                letter-spacing: 8px;
+                font-size: 20px;
+            }
+
+            .offer {
+                font-size: 25px;
+                letter-spacing: 10px;
+            }
+
+            .btn_buy-now {
+                margin-top: 20px;
+                padding: 8px 45px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and(max-width:480px) {
+        .container {
+            padding: 0 24px;
+        }
+}
+
+@media screen and(max-width:320px) {
+    .sec-6 {
+        .container {
+            .mn-sec {
+                padding: 90px 24px;
+
+                .heading {
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+
+                .sub_heading {
+                    padding: 6px 0;
+                    letter-spacing: 5px;
+                    font-size: 15px;
+                }
+
+                .offer {
+                    font-size: 20px;
+                    letter-spacing: 5px;
+                }
+
+                .btn_buy-now {
+                    margin-top: 20px;
+                    padding: 8px 45px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

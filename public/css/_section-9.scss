@@ -1,0 +1,157 @@
+.sec-9 {
+    background-image: url(../img/bg_Contact-us.jpg);
+    @include bg();
+
+    .mn-sec {
+        padding-top: 120px;
+
+        .mn-content {
+            width: 100%;
+
+            iframe {
+                width: 100%;
+                height: 400px;
+            }
+
+            .country-name {
+                font-size: 35px;
+                color: $secondary_color;
+                padding-bottom: 36px
+            }
+
+            .mn-address {
+                padding-bottom: 30px;
+
+                .title {
+                    @include title();
+                }
+
+                .disc {
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $secondary_color;
+                }
+            }
+
+            .mn-phone-time {
+                padding-bottom: 30px;
+            }
+
+            .mn-social {
+
+                .mn-ic_social {
+
+                    .ic_social {
+                        padding: 0 10px;
+                        font-size: 32px;
+                        transition: .1s;
+
+                        &:hover {
+                            color: $secondary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .sec-9 {
+        .mn-sec {
+            padding-top: 110px;
+
+            .mn-content {
+                .country-name {
+                    font-size: 30px;
+                    padding-bottom: 30px
+                }
+
+                .mn-address {
+                    padding-bottom: 30px;
+
+                    .title {
+                        font-size: 18px;
+                    }
+
+                    .disc {
+                        font-size: 16px;
+                    }
+                }
+
+                .mn-phone-time {
+                    padding-bottom: 25px;
+                }
+
+                .mn-social {
+                    .mn-ic_social {
+                        .ic_social {
+                            font-size: 28px;
+                            transition: .1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:767px) {
+    .sec-9 {
+        .mn-sec {
+            padding-top: 70px;
+
+            .mn-content {
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:480px) {
+    .sec-9 {
+        .mn-sec {
+            padding-top: 70px;
+
+            .mn-content {
+                padding: 30px;
+
+                .country-name {
+                    font-size: 20px;
+                    padding-bottom: 20px
+                }
+
+                .mn-address {
+                    padding-bottom: 20px;
+
+                    .title {
+                        font-size: 18px;
+                    }
+
+                    .disc {
+                        font-size: 14px;
+                    }
+                }
+
+                .mn-phone-time {
+                    padding-bottom: 15px;
+                }
+
+                .mn-social {
+                    .mn-ic_social {
+                        .ic_social {
+                            font-size: 25px;
+                            transition: .1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:320px) {
+    .mn-content {
+        padding: 12px 24px;
+    }
+}
